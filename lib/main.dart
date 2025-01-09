@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tubes/login.dart';
 import 'package:tubes/bottom_bar.dart';
 import 'package:tubes/dashboard.dart';
 import 'package:tubes/profile.dart';
@@ -40,7 +41,8 @@ class MyApp extends StatelessWidget {
       // home: const Dashboard(),
       initialRoute: '/',
       routes: {
-        '/': (context) => const BottomBar(),
+        '/': (context) => const Login(),
+        '/dashboard': (context) => const BottomBar(),
         '/profile': (context) => const Profile(),
         '/detail': (context) => const Detail(
               title: '',
